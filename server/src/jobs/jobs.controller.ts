@@ -16,6 +16,6 @@ export class JobsController {
   @UseGuards(JwtAuthGuard)
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.jobsService.findOne(+id);
+    return this.jobsService.findOne(id);
   }
 }

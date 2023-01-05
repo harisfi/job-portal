@@ -13,9 +13,9 @@ export class JobsService {
     return res.data;
   }
 
-  async findOne(id: number) {
+  async findOne(id: string) {
     const res = await axios({
-      url: `http://dev3.dansmultipro.co.id/api/recruitment/positions.json/${id}`,
+      url: `http://dev3.dansmultipro.co.id/api/recruitment/positions/${id}`,
     });
 
     return res.data;
