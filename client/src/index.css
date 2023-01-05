@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.html-plain ul {
+  list-style: disc;
+  margin: revert;
+  padding: revert;
+}
+
+.html-plain li {
+  margin: .2rem 0;
+}
+
+.html-plain a {
+  color: revert;
+  text-decoration: revert;
+}
+
+.html-plain p>strong {
+  margin: 1rem 0;
+  display: block;
+}
+
+.html-plain code {
+  white-space: pre-wrap;
+}
